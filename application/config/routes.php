@@ -52,6 +52,7 @@ $route['forgive_confession'] = 'site/forgive_confession';
 $route['verify/(:any)'] = 'site/verify_email/$1'; 
 
 $route['confession/(:num)'] = 'site/confession/$1';
+$route['confession/(:num)/(:any)'] = 'site/confession/$1/$2';
 $route['confessions'] = 'site/confessions'; 
 $route['confessions/(:any)'] = 'site/confessions'; 
 $route['best_confessions'] = 'site/top_confessions'; 

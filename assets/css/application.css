@@ -3603,3 +3603,17 @@ textarea.mce-textbox {
 .vjs-control-bar {
   display: none;
 }
+
+/** 
+ * NICK's CHANGES
+ **/
+.confession-wrap {
+  position: relative;
+  }
+  .confession-wrap .banner {
+    position: absolute;
+    right: 3px;
+    top: 40px;
+    width: 212px;
+    height: 42px;
+  }

@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.5.38, for debian-linux-gnu (i686)
+-- MySQL dump 10.13  Distrib 5.6.17, for Win32 (x86)
 --
 -- Host: localhost    Database: godforgivesyou
 -- ------------------------------------------------------
--- Server version	5.5.38-0ubuntu0.14.04.1
+-- Server version	5.6.17
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -87,7 +87,7 @@ CREATE TABLE `bot_check` (
 
 LOCK TABLES `bot_check` WRITE;
 /*!40000 ALTER TABLE `bot_check` DISABLE KEYS */;
-INSERT INTO `bot_check` VALUES ('2014-07-17 15:56:39','0010502303322ef07cf79d7e406cb0fa64e2adad62'),('2014-07-17 15:57:48','004c3b37da351cf997a48ab54dbf4e7f8852cc6686'),('2014-07-17 16:52:44','00151bae294ebb430592bfbc5a4356ec8b4e71b02b'),('2014-07-17 17:15:02','004ab292bf6536fbf7e3faf652a53e7453047843c2'),('2014-07-17 17:16:55','0080081279609817920e0da73ec3733d32068db739'),('2014-07-17 17:18:49','0024768effeb4efe544b51cacf99688682cac3df17'),('2014-07-17 17:19:57','0006fb340ef4ed8851bb690b30503e31c9f4307395'),('2014-07-17 19:06:15','00f00c96bda449462df6c6c7abab01014de4a28d73'),('2014-07-17 19:08:11','00a2b3aa4060d05946079650561390145ee7c3d7a0'),('2014-07-18 15:24:36','00a70e3b41b61c1b146662c051dbc57c569a290245'),('2014-07-18 16:08:02','0055ea60f997e116661fe1b950e6eb7d87c5a15603'),('2014-07-18 16:10:11','00898b7dea21bdcba0b1dee470395439264da67529'),('2014-07-18 16:12:00','00a5d7b349912048ec8dc97a7e3510afc0dde0b0bd'),('2014-07-18 16:12:57','00dca929bd790f3c0e005a3cd786e3c4c4fe36d526'),('2014-07-18 16:13:19','008dc5b0253d9b1700aeec409f4c05851f9985dba2'),('2014-07-18 16:14:04','00414722b56a58c574ea6af3ca1c577960c6433824'),('2014-07-18 16:47:48','001cc1b6eb331137a6c9a81b783e1bfb2405ede3ef'),('2014-07-18 19:50:30','00b5a359e9a92727fc3038d715f8efa9c6703ff020'),('2014-07-18 20:07:29','0076b89e3203570b5613815220ee35f755443bac2c'),('2014-07-18 21:13:25','00f974f6d99b9ad31e8762360ea933edfcd7c8d32f'),('2014-07-18 21:14:51','00b3091adcfc03deb6e25552960974903f2d576711'),('2014-07-21 16:00:25','002be92e8c72996302125aea4399ca7b3c745a7c42'),('2014-07-21 16:26:42','0038b414579970f16a294e0d5e465dbf03ebbe2885'),('2014-07-21 16:28:15','00fa8e5232832b24a64b1def7e0989c9928a90cfca'),('2014-07-21 16:43:00','00f4d4a1b438b2ff6314caa9d6d87d93e9478c78cf'),('2014-07-21 20:21:46','00272a0493dbbb1feaefd726aa307f5b132dc8e395'),('2014-07-21 20:31:50','007f2e49e82e322b05118ab3b66c8a3109f920f261'),('2014-07-21 20:33:34','00063551d21f2224e432402708f9f641f5901cf650'),('2014-07-21 20:35:45','00299025b0acce1d7f0b5f7d573f11c80020026023'),('2014-07-21 20:36:25','004f498e637700effa28ce0467f5e1384a16bbee31'),('2014-07-21 20:39:43','004be72f0da07debeaef395ccb59ee7b9fa875b14e'),('2014-07-21 20:40:06','005a8b40d3b7696d314bde840d2aa27b343b9f0272'),('2014-07-21 20:40:29','008fc8a39b944273c7a0a6615b3ccf59fddf7d6e17'),('2014-07-21 20:42:54','0032a1f5c485d9252cf5be884f6faa10a865f3a7ac'),('2014-07-21 21:11:42','0069131116885634320a75afd8dcb185210098ce3d'),('2014-07-21 21:17:33','008ecbf47eaae63d196fc62ca3c1872d600d46d2bc'),('2014-07-23 16:57:01','00480060814712b38dd838a3dd4cc051754afa3232'),('2014-07-23 20:34:00','009df519b383b2452579ef49120499ec59ff90e1c4'),('2014-07-24 19:30:42','009d2cacab2a86d28ac9d4ed4cabfc4a8297609fb3'),('2014-10-06 21:25:14','0019c74f26c57ec08e2404d83e25149249f169307d'),('2014-10-06 21:27:22','005428583c592bf8b8f188c59b93e0a2f270e8a0df'),('2014-10-06 21:35:07','00d81dd18b43257e8eeb4022e43e7e89aa52276436');
+INSERT INTO `bot_check` VALUES ('2014-07-17 15:56:39','0010502303322ef07cf79d7e406cb0fa64e2adad62'),('2014-07-17 15:57:48','004c3b37da351cf997a48ab54dbf4e7f8852cc6686'),('2014-07-17 16:52:44','00151bae294ebb430592bfbc5a4356ec8b4e71b02b'),('2014-07-17 17:15:02','004ab292bf6536fbf7e3faf652a53e7453047843c2'),('2014-07-17 17:16:55','0080081279609817920e0da73ec3733d32068db739'),('2014-07-17 17:18:49','0024768effeb4efe544b51cacf99688682cac3df17'),('2014-07-17 17:19:57','0006fb340ef4ed8851bb690b30503e31c9f4307395'),('2014-07-17 19:06:15','00f00c96bda449462df6c6c7abab01014de4a28d73'),('2014-07-17 19:08:11','00a2b3aa4060d05946079650561390145ee7c3d7a0'),('2014-07-18 15:24:36','00a70e3b41b61c1b146662c051dbc57c569a290245'),('2014-07-18 16:08:02','0055ea60f997e116661fe1b950e6eb7d87c5a15603'),('2014-07-18 16:10:11','00898b7dea21bdcba0b1dee470395439264da67529'),('2014-07-18 16:12:00','00a5d7b349912048ec8dc97a7e3510afc0dde0b0bd'),('2014-07-18 16:12:57','00dca929bd790f3c0e005a3cd786e3c4c4fe36d526'),('2014-07-18 16:13:19','008dc5b0253d9b1700aeec409f4c05851f9985dba2'),('2014-07-18 16:14:04','00414722b56a58c574ea6af3ca1c577960c6433824'),('2014-07-18 16:47:48','001cc1b6eb331137a6c9a81b783e1bfb2405ede3ef'),('2014-07-18 19:50:30','00b5a359e9a92727fc3038d715f8efa9c6703ff020'),('2014-07-18 20:07:29','0076b89e3203570b5613815220ee35f755443bac2c'),('2014-07-18 21:13:25','00f974f6d99b9ad31e8762360ea933edfcd7c8d32f'),('2014-07-18 21:14:51','00b3091adcfc03deb6e25552960974903f2d576711'),('2014-07-21 16:00:25','002be92e8c72996302125aea4399ca7b3c745a7c42'),('2014-07-21 16:26:42','0038b414579970f16a294e0d5e465dbf03ebbe2885'),('2014-07-21 16:28:15','00fa8e5232832b24a64b1def7e0989c9928a90cfca'),('2014-07-21 16:43:00','00f4d4a1b438b2ff6314caa9d6d87d93e9478c78cf'),('2014-07-21 20:21:46','00272a0493dbbb1feaefd726aa307f5b132dc8e395'),('2014-07-21 20:31:50','007f2e49e82e322b05118ab3b66c8a3109f920f261'),('2014-07-21 20:33:34','00063551d21f2224e432402708f9f641f5901cf650'),('2014-07-21 20:35:45','00299025b0acce1d7f0b5f7d573f11c80020026023'),('2014-07-21 20:36:25','004f498e637700effa28ce0467f5e1384a16bbee31'),('2014-07-21 20:39:43','004be72f0da07debeaef395ccb59ee7b9fa875b14e'),('2014-07-21 20:40:06','005a8b40d3b7696d314bde840d2aa27b343b9f0272'),('2014-07-21 20:40:29','008fc8a39b944273c7a0a6615b3ccf59fddf7d6e17'),('2014-07-21 20:42:54','0032a1f5c485d9252cf5be884f6faa10a865f3a7ac'),('2014-07-21 21:11:42','0069131116885634320a75afd8dcb185210098ce3d'),('2014-07-21 21:17:33','008ecbf47eaae63d196fc62ca3c1872d600d46d2bc'),('2014-07-23 16:57:01','00480060814712b38dd838a3dd4cc051754afa3232'),('2014-07-23 20:34:00','009df519b383b2452579ef49120499ec59ff90e1c4'),('2014-07-24 19:30:42','009d2cacab2a86d28ac9d4ed4cabfc4a8297609fb3'),('2014-10-06 21:25:14','0019c74f26c57ec08e2404d83e25149249f169307d'),('2014-10-06 21:27:22','005428583c592bf8b8f188c59b93e0a2f270e8a0df'),('2014-10-06 21:35:07','00d81dd18b43257e8eeb4022e43e7e89aa52276436'),('2014-10-14 18:02:38','003590671017ad7a8f204296edcf880ea18a26212f'),('2014-10-14 18:36:28','008c3931d516480a4a4bf9ad13d5eb463fb9c87598'),('2014-10-14 18:38:03','002297016a5c4c9f98367465c8215e9b82b4b9f574'),('2014-10-14 18:43:46','006659182ae77681db057c9226adfc51981a6aba13'),('2014-10-14 18:44:18','00dd09587dbdb968f53d40200e3389ca6d83e9d514'),('2014-10-14 19:25:29','00f2aec26bd84769dc86274fb19b870b70a32e4daa');
 /*!40000 ALTER TABLE `bot_check` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -105,7 +105,7 @@ CREATE TABLE `confessions` (
   `user` int(10) unsigned NOT NULL DEFAULT '0',
   `spam` enum('Yes','No') NOT NULL DEFAULT 'No',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -114,7 +114,7 @@ CREATE TABLE `confessions` (
 
 LOCK TABLES `confessions` WRITE;
 /*!40000 ALTER TABLE `confessions` DISABLE KEYS */;
-INSERT INTO `confessions` VALUES (1,'ds fasf asdf asdf adsf asdf asdf asdf adsf asdf',3,0,'No'),(2,'f dsf sdaf asd fasdf adsf asdf',2,0,'No'),(3,'gdfgdfsgdsfgdsfgdsfgdfsg',1,0,'No'),(4,'fdasf asdf asdf dasff asdf asdf dasfdasf',2,0,'No'),(5,'i eated all da puddin an now i fat',6,0,'No'),(6,'tr yrey t eeyrt ry r ye fb gfdb  ftr yrey t eeyrt ry r ye fb gfdb  ftr yrey t eeyrt ry r ye fb gfdb  ftr yrey t eeyrt ry r ye fb gfdb  ftr yrey t eeyrt ry r ye fb gfdb  ftr yrey t eeyrt ry r ye fb gfdb  ftr yrey t eeyrt ry r ye fb gfdb  ftr yrey t eeyrt ry r ye fb gfdb  ftr yrey t eeyrt ry r ye fb gfdb  ftr yrey t eeyrt ry r ye fb gfdb  ftr yrey t eeyrt ry r ye fb gfdb  ftr yrey t eeyrt ry r ye fb gfdb  ftr yrey t eeyrt ry r ye fb gfdb  ftr yrey t eeyrt ry r ye fb gfdb  ftr yrey t eeyrt ry r ye fb gfdb  ftr yrey t eeyrt ry r ye fb gfdb  ftr yrey t eeyrt ry r ye fb gfdb  ftr yrey t eeyrt ry r ye fb gfdb  ftr yrey t eeyrt ry r ye fb gfdb  ftr yrey t eeyrt ry r ye fb gfdb  ftr yrey t eeyrt ry r',7,0,'No'),(7,'tr yrey t eeyrt ry r ye fb gfdb  ftr yrey t eeyrt ry r ye fb gfdb  ftr yrey t eeyrt ry r ye fb gfdb  ftr yrey t eeyrt ry r ye fb gfdb  ftr yrey t eeyrt ry r ye fb gfdb  ftr yrey t eeyrt ry r ye fb gfdb  ftr yrey t eeyrt ry r ye fb gfdb  ftr yrey t eeyrt ry r ye fb gfdb  ftr yrey t eeyrt ry r ye fb gfdb  ftr yrey t eeyrt ry r ye fb gfdb  ftr yrey t eeyrt ry r ye fb gfdb  ftr yrey t eeyrt ry r ye fb gfdb  ftr yrey t eeyrt ry r ye fb gfdb  ftr yrey t eeyrt ry r ye fb gfdb  ftr yrey t eeyrt ry r ye fb gfdb  ftr yrey t eeyrt ry r ye fb gfdb  ftr yrey t eeyrt ry r ye fb gfdb  ftr yrey t eeyrt ry r ye fb gfdb  ftr yrey t eeyrt ry r ye fb gfdb  ftr yrey t eeyrt ry r ye fb gfdb  ftr yrey t eeyrt ry r',9,0,'No'),(8,'gdfg dfsg dfsg',3,1,'No'),(9,'f gdfsg dsfg dfsg fds g',3,1,'No'),(10,'f gdfsg dsfg dfsg fds g',5,1,'No'),(11,'fg dsf gdfs gdfs gdfs',1,0,'No'),(12,'sdgf asf sdf',2,4,'No'),(13,'fdsa fasd f',3,5,'No'),(14,'dfvdfecvbxxcvb bdgfs gdfs',2,5,'No'),(15,'fasdf dasf das fdas fdasf',5,6,'No'),(16,'fasdf dasf das fdas fd dasf asdf asf',2,7,'No'),(17,'fasdf dasf das fdas fd dasf asdf asf',1,0,'No'),(18,'fasdf dasf das fdas fd dasf asdf asf',2,8,'No'),(19,'f dasf asdf asdf',3,10,'No'),(20,'I peed on the bus.',3,0,'No'),(21,'I stole money from my Mother.',1,13,'No'),(22,'I stole a candy bar.',2,0,'No'),(23,'I broke the speed limit.',3,0,'No');
+INSERT INTO `confessions` VALUES (1,'I cheated on a test',1,1,'No'),(2,'I stole a candy bar',5,1,'No'),(3,'I broke the speed limit',9,1,'No'),(4,'I lied to my brother',11,1,'No');
 /*!40000 ALTER TABLE `confessions` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -188,7 +188,7 @@ CREATE TABLE `forgives` (
   `type` enum('forgive','condemn','ignore','spam') DEFAULT NULL,
   `user` int(10) unsigned NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=67 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -197,7 +197,6 @@ CREATE TABLE `forgives` (
 
 LOCK TABLES `forgives` WRITE;
 /*!40000 ALTER TABLE `forgives` DISABLE KEYS */;
-INSERT INTO `forgives` VALUES (1,1,'forgive',10),(2,17,'forgive',10),(3,16,'spam',10),(4,11,'ignore',10),(5,4,'spam',10),(6,12,'spam',10),(7,7,'spam',10),(8,13,'spam',10),(9,10,'spam',10),(10,9,'condemn',10),(11,6,'ignore',10),(12,18,'forgive',10),(13,5,'ignore',10),(14,2,'spam',10),(15,15,'forgive',10),(16,14,'condemn',10),(17,19,'spam',10),(18,3,'forgive',10),(19,8,'ignore',10),(20,11,'spam',1),(21,14,'spam',1),(22,9,'spam',1),(23,15,'spam',1),(24,18,'forgive',1),(25,16,'spam',1),(26,2,'spam',1),(27,5,'forgive',1),(28,4,'spam',1),(29,12,'spam',1),(30,3,'spam',1),(31,10,'spam',1),(32,8,'spam',1),(33,6,'spam',1),(34,17,'spam',1),(35,1,'spam',1),(36,19,'spam',1),(37,13,'spam',1),(38,7,'spam',1),(39,1,'forgive',11),(40,18,'spam',12),(41,4,'spam',12),(42,15,'spam',12),(43,14,'ignore',12),(44,12,'ignore',12),(45,19,'ignore',12),(46,21,'forgive',13),(47,20,'forgive',13),(48,19,'spam',13),(49,18,'spam',13),(50,17,'spam',13),(51,16,'spam',13),(52,15,'spam',13),(53,14,'spam',13),(54,13,'spam',13),(55,12,'spam',13),(56,11,'spam',13),(57,10,'spam',13),(58,9,'spam',13),(59,8,'spam',13),(60,7,'spam',13),(61,6,'spam',13),(62,5,'spam',13),(63,4,'spam',13),(64,3,'spam',13),(65,2,'spam',13),(66,1,'spam',13);
 /*!40000 ALTER TABLE `forgives` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -241,7 +240,7 @@ CREATE TABLE `prayers` (
   `user` int(10) unsigned NOT NULL DEFAULT '0',
   `spam` enum('Yes','No') NOT NULL DEFAULT 'No',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -250,7 +249,6 @@ CREATE TABLE `prayers` (
 
 LOCK TABLES `prayers` WRITE;
 /*!40000 ALTER TABLE `prayers` DISABLE KEYS */;
-INSERT INTO `prayers` VALUES (1,'kjh o;lj hhj h;o kluh kjl hkg jl jlk',2,0,'No'),(2,'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec ullamcorper elit. Morbi tincidunt eleifend dui, et suscipit arcu semper ut. Vivamus placerat nisi eget erat dictum rhoncus. Donec vel imperdiet mauris. Nulla mattis velit justo, ac pretium elit iaculis vitae. Praesent fringilla erat non ante sagittis facilisis. In hac habitasse platea dictumst. Aenean imperdiet aliquam condimentum. Cras scelerisque tellus a rhoncus adipiscing.\n\nSed vitae tempor erat, varius tempor dolor. Nunc sagittis turpis ut massa mattis aliquet. Cras ac fermentum ante. Sed eleifend condimentum arcu, quis rutrum dolor scelerisque et. Integer eu ultrices dui. Vestibulum est elit, egestas eleifend laoreet no',2,0,'No'),(3,'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec ullamcorper elit. Morbi tincidunt eleifend dui, et suscipit arcu semper ut. Vivamus placerat nisi eget erat dictum rhoncus. Donec vel imperdiet mauris. Nulla mattis velit justo, ac pretium elit iaculis vitae. Praesent fringilla erat non ante sagittis facilisis. In hac habitasse platea dictumst. Aenean imperdiet aliquam condimentum. Cras scelerisque tellus a rhoncus adipiscing.',3,0,'No'),(4,'Lorem ipsum dolor',2,0,'No'),(5,'Lorem ipsum dolorfsdf',1,0,'No'),(6,'Lorem ipsum dolorfsdf3',6,0,'No'),(7,'Lorem ipsum dolorfsdf3 fasdf asdf dasf',2,0,'No'),(8,'Lorem ipsum dolorfsdf3 fasdf asdf daLorem ipsum dolor sit amet, consectetur adipiscing elit. Proin rhoncus metus et enim condimentum, vel suscipit nisi sollicitudin. Nullam vel adipiscing metus. Nunc ut nulla id augue egestas vehicula. Nulla blandit sollicitudin porttitor. Mauris ac nunc erat. Phasellus lobortis nisl ut elit dictum, id adipiscing erat suscipit. Etiam in facilisis nunc, at lobortis erat. Morbi convallis condimentum lacus, id posuere elit imperdiet vitae.\n\nNulla ultrices tincidunt odio et fringilla. Nulla blandit non neque in dictum. Etiam a ante ante. Curabitur ac sem ipsum. Integer tincidunt magna sed augue dictum, nec congue erat feugiat. Morbi condimentum, libero ac porsf',4,0,'No'),(9,'Lorem ip\n\nsum dolorfsdf3 fasdf asdf daLorem ipsum dolor sit amet, \n\nconsectetur adipiscing elit. Proin rhoncus metus et enim \n\ncondimentum, vel suscipit nisi sollicitudin. Nullam vel \n\nad\n\n\nipiscing metus. Nunc ut nulla id augue egestas vehicula. \n\nNulla blandit sollicitudin porttitor. Mauris ac nunc erat. \n\nPha\n\nsellus lobortis nisl ut elit dictum, id adipiscing erat \n\nsuscipit. Etiam in facilisis nunc, at lobortis erat. Morbi \n\n\nconvallis condimentum lacus, id posuere elit imperdiet vitae.',5,0,'No'),(10,'peace on earth',1,0,'No'),(11,'fdasf dsfdsaf',2,0,'No'),(12,'fdas fasdf das fdasf dasf dasfasd f',6,10,'No'),(13,'f asdf dasf dasf das fdsa f',7,10,'No'),(14,'a quick death',3,1,'No'),(15,'Forgiveness',2,0,'No');
 /*!40000 ALTER TABLE `prayers` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -267,7 +265,7 @@ CREATE TABLE `prayers_for` (
   `type` enum('forgive','condemn','ignore','spam') DEFAULT NULL,
   `user` int(10) unsigned NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -276,7 +274,6 @@ CREATE TABLE `prayers_for` (
 
 LOCK TABLES `prayers_for` WRITE;
 /*!40000 ALTER TABLE `prayers_for` DISABLE KEYS */;
-INSERT INTO `prayers_for` VALUES (1,13,'ignore',10),(2,12,'spam',10),(3,11,'',10),(4,10,'spam',10),(5,9,'',10),(6,13,'spam',1),(7,12,'ignore',1),(8,11,'spam',1),(9,10,'',1),(10,9,'spam',1),(11,8,'spam',1),(12,7,'spam',1),(13,6,'spam',1),(14,14,'',1);
 /*!40000 ALTER TABLE `prayers_for` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -328,7 +325,7 @@ CREATE TABLE `user` (
   `name` varchar(64) NOT NULL DEFAULT 'Anonymous',
   PRIMARY KEY (`id`),
   UNIQUE KEY `email` (`email`)
-) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -337,7 +334,7 @@ CREATE TABLE `user` (
 
 LOCK TABLES `user` WRITE;
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;
-INSERT INTO `user` VALUES (1,'bain.lifthousedesign@gmail.com','7505d64a54e061b7acd54ccd58b49dc43500b635','Bain','Mullins','(432) 234-2342',0,'0000-00-00 00:00:00','2014-06-03 15:42:44','2014-07-23 11:56:47','e4adac1c0cf8cb4c35e394ca205322d60cbe606e','developer','confirmed','Anonymous'),(2,'tara@lifthousedesign.com','5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8','Tara','Beattie',NULL,0,'0000-00-00 00:00:00','2014-07-24 14:27:17','2014-07-24 14:27:17',NULL,'administrator','unconfirmed','Anonymous'),(3,'mike@lifthousedesign.com','5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8','Mike','Beattie',NULL,0,'0000-00-00 00:00:00','2014-10-13 20:14:26','2014-10-13 20:14:26',NULL,'administrator','confirmed','Anonymous'),(10,'bain@yopmail.com','7505d64a54e061b7acd54ccd58b49dc43500b635',NULL,NULL,NULL,0,'0000-00-00 00:00:00',NULL,'2014-07-22 10:52:19','dd369c49456d070788e90e260b145991b95cbb36','user','confirmed','Anonymous'),(11,'fasdfdsa@sdfdsf.com','c4ab510d3f6053f904c390d797b530c2c9fda91c',NULL,NULL,NULL,0,'0000-00-00 00:00:00',NULL,'2014-07-22 14:57:23','0d9f8508fd61e85bd9429a8e8e793eecbf3511c3','user','unconfirmed','Anonymous'),(12,'mvbeattie@gmail.com','a483e5ab620a95f7515c526ceb9fdfa076afae75',NULL,NULL,NULL,0,'0000-00-00 00:00:00',NULL,'2014-07-23 20:45:41','01c3980506426fe230c5acf5a41aa97b2d28cba3','user','unconfirmed','Anonymous'),(13,'mike.lifthousedesign@gmail.com','5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8',NULL,NULL,NULL,0,'0000-00-00 00:00:00',NULL,'2014-07-24 19:30:42','a5a299266a64062689738311a635303e89f1130f','user','unconfirmed','Anonymous');
+INSERT INTO `user` VALUES (1,'nick@nickniebaum.com','5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8','Nick','Niebaum',NULL,0,'2014-10-14 13:12:21','2014-10-14 13:12:21',NULL,NULL,'administrator','confirmed','Anonymous'),(2,'mike@lifthousedesign.com','5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8','Mike','Beattie',NULL,0,'0000-00-00 00:00:00',NULL,NULL,NULL,'administrator','unconfirmed','Anonymous'),(3,'tara@lifthousedesign.com','5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8','Tara','Beattie',NULL,0,'0000-00-00 00:00:00','2014-07-24 14:27:17','2014-07-24 14:27:17',NULL,'administrator','unconfirmed','Anonymous');
 /*!40000 ALTER TABLE `user` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -350,4 +347,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2014-10-14  8:58:55
+-- Dump completed on 2014-10-14 15:45:12

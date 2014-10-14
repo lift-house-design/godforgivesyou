@@ -24,6 +24,9 @@
 			</div>
 		<? } ?>
 	</div>
+	<div class="w800 pull-center align-right pad20r pad20b">
+		<a href="/confessions"><img src="<?php echo asset('img/more-banner.png') ?>" alt="More" title="More" /></a>
+	</div>
 </div>
 <div class="top-bordered bg3">
 	<div class="w800 pull-center align-center pad40t pad40b pad20l pad20r">

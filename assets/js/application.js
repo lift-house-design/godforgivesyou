@@ -58,11 +58,20 @@ function forgive(id, type)
 	{
 		signup_form(
 			'Sign up to pray with our community and forgive the sins of others.',
-			function(){$('#signup').hide();forgive(id,type);},
-			false
+			function(){
+				$('#signup').hide();
+				forgive_send(id,type);
+			},
+			true
 		);
 		return;
 	}
+	else
+		forgive_send(id,type);
+}
+
+function forgive_send(id,type)
+{
 	$.post(
 		'/forgive_confession',
 		{id: id, type: type},
@@ -80,11 +89,20 @@ function pray(id, type)
 	{
 		signup_form(
 			'Sign up to pray with our community and forgive the sins of others.',
-			function(){$('#signup').hide();pray(id,type);},
-			false
+			function(){
+				$('#signup').hide();
+				pray_send(id,type);
+			},
+			true
 		);
 		return;
 	}
+	else
+		pray_send(id,type);
+}
+
+function pray_send(id,type)
+{
 	$.post(
 		'/send_prayer',
 		{id: id, type: type},
@@ -101,13 +119,17 @@ function hide_signup()
 {
 	$('#signup').hide();
 }
-function signup_form(text, success, skippable)
-{
-	signup_success = success;
+function signup_form(text, successCallback, skippable)
+{	
+	$('#signup-skip').off('click');
+
 	if(skippable)
 	{
 		$('#signup-skip').show();
-		$('#signup-skip').click(signup_success);
+		$('#signup-skip').on('click',function(){
+			console.log(successCallback);
+			successCallback();
+		});
 	}
 	else
 		$('#signup-skip').hide();
@@ -208,7 +230,7 @@ function submit_confession()
 				if(data.error)
 					$('.ask-errors').html(data.error).show();
 				else
-					window.location = '/confession/'+data.id;
+					window.location = '/confession/'+data.id+'/new';
 			},
 			'json'
 		).fail(function(){

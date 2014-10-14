@@ -36,7 +36,7 @@ $(function() {
 			<? } ?>
 		</div>
 		<div class="ask-box">
-			<textarea placeholder="What are you sins, my child?" maxlength="700"></textarea>
+			<textarea placeholder="Ask..." maxlength="700"></textarea>
 		</div>
 		<div class="ask-errors hide">
 

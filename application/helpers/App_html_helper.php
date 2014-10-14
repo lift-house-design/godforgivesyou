@@ -1,13 +1,13 @@
 <?php
 
-function view_confession($confession)
+function view_confession($confession,$banner=FALSE)
 {
 	?>
 		<div class="confession-wrap">
 			<div class="share">
 				<div class="stats">
 					<span><?= $confession['forgives']['forgive'] ?> forgive<?= ($confession['forgives']['forgive'] == 1 ? '' : 's') ?></span>
-					<span><?= $confession['forgives']['condemn'] ?> condemnation<?= ($confession['forgives']['condemn'] == 1 ? '' : 's') ?></span>
+					<!--span><?= $confession['forgives']['condemn'] ?> condemnation<?= ($confession['forgives']['condemn'] == 1 ? '' : 's') ?></span-->
 				</div>
 				<div class="social">
 					<script type="text/javascript">
@@ -24,7 +24,7 @@ function view_confession($confession)
 					<img src="/image/confessions/<?= $confession['id'] ?>.png" alt="<?= htmlspecialchars($confession['text']) ?>"/>
 				</a>
 			</div>
-			<div class="pad0t pad10l pad9r pad30b forgive" data-id="<?= $confession['id'] ?>">
+			<!--div class="pad0t pad10l pad9r pad30b forgive" data-id="<?= $confession['id'] ?>">
 				<? foreach(['forgive','condemn','ignore','spam'] as $i => $type){ ?>
 					<span class="w25pc block <?= ($i == 3 ? '' : 'pad10r' ) ?>">
 						<a href="javascript:forgive(<?= $confession['id'] ?>,'<?= $type ?>')" class="index-button w100pc block">
@@ -32,7 +32,19 @@ function view_confession($confession)
 						</a>
 					</span>
 				<? } ?>
+			</div-->
+			<div class="pad0t pad10l pad9r pad30b forgive" data-id="<?= $confession['id'] ?>">
+				<? foreach(['forgive'] as $i => $type){ ?>
+					<span class="w25pc block <?= ($i == 3 ? '' : 'pad10r' ) ?>">
+						<a href="javascript:forgive(<?= $confession['id'] ?>,'<?= $type ?>')" class="index-button w100pc block">
+							<?= ucfirst($type) ?>
+						</a>
+					</span>
+				<? } ?>
 			</div>
+			<?php if($banner): ?>
+				<img class="banner" alt="God Always Forgives" title="God Always Forgives" src="<?php echo asset('img/godalwaysforgives-banner.png') ?>" />
+			<?php endif; ?>
 		</div>
 	<?
 }
@@ -60,8 +72,17 @@ function view_prayer($prayer)
 					<img src="/image/prayers/<?= $prayer['id'] ?>.png" alt="<?= htmlspecialchars($prayer['text']) ?>"/>
 				</a>
 			</div>
-			<div class="pad0t pad10l pad9r pad30b pray" data-id="<?= $prayer['id'] ?>">
+			<!--div class="pad0t pad10l pad9r pad30b pray" data-id="<?= $prayer['id'] ?>">
 				<? foreach(['pray','ignore','spam'] as $i => $type){ ?>
+					<span class="w33pc block <?= ($i == 2 ? '' : 'pad10r' ) ?>">
+						<a href="javascript:pray(<?= $prayer['id'] ?>,'<?= $type ?>')" class="index-button w100pc block">
+							<?= ucfirst($type) ?>
+						</a>
+					</span>
+				<? } ?>
+			</div-->
+			<div class="pad0t pad10l pad9r pad30b pray" data-id="<?= $prayer['id'] ?>">
+				<? foreach(['pray'] as $i => $type){ ?>
 					<span class="w33pc block <?= ($i == 2 ? '' : 'pad10r' ) ?>">
 						<a href="javascript:pray(<?= $prayer['id'] ?>,'<?= $type ?>')" class="index-button w100pc block">
 							<?= ucfirst($type) ?>

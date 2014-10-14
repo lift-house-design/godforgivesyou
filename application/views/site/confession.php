@@ -1,6 +1,6 @@
 <div class="w700 pull-center align-center">
 	<div class="white-opac w700 pad40">
-		<? view_confession($confession); ?>
+		<? view_confession($confession,$new_confession); ?>
 		<div class="w600 pull-center visible">
 			<? if($prev){ ?>
 				<a href="/confession/<?= $prev ?>" class="index-button pull-left w200">&larr; Previous</a>

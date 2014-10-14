@@ -38,7 +38,15 @@ $config['database'] = array_merge(
 	$config['databases']['default'],
 	$config['databases'][$config['environment']]
 );
-//var_dump($config['database']);
+
+//////////////////////////////// DATABASE CONNECTION OVERRIDE ////////////////////////////////
+$config['database']=array_merge($config['database'],array(
+	'username'=>'root',
+	'password'=>'',
+	'database'=>'godforgivesyou',
+));
+//////////////////////////////// DATABASE CONNECTION OVERRIDE ////////////////////////////////
+
 /* URL / Path Configuration */
 $config['domain'] = $_SERVER['HTTP_HOST'];
 $config['scheme'] = 'http';
@@ -51,10 +59,10 @@ $config['module_path'] = APPPATH.'modules';
 
 /* Metadata/SEO */
 $config['meta'] = array(
-	'site_name' => 'Project Template',
-	'title' => "Project Template",
-	'description' => "Project Template for LAMP Developers",
-	'keywords' =>'LAMP template, PHP Template',
+	'site_name' => 'God Forgives You',
+	'title' => "God Forgives You",
+	'description' => '',
+	'keywords' =>'god forgives',
 	'url' => $config['full_path'],
 	'image' => '/assets/img/logo.png'
 );

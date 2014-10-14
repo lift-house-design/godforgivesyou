@@ -41,10 +41,6 @@ class Site extends App_Controller
 	{
 		$this->data['content'] = $this->content->get('home');
 		$this->data['confessions'] = $this->confessions->top_confessions(4);
-		config_merge('meta',array(
-			'title' => 'God Forgives You',
-			'description' => ''
-		));
 	}
 
 	public function forgive()
@@ -192,13 +188,14 @@ class Site extends App_Controller
 		$this->data['count'] = $count;
 	}
 
-	public function confession($id)
+	public function confession($id,$new=FALSE)
 	{
 		list(
 			$this->data['confession'],
 			$this->data['prev'],
 			$this->data['next']
 		) = $this->confessions->confession($id);
+		$this->data['new_confession']=$new!==FALSE;
 	}
 
 	public function make_thumbs()
