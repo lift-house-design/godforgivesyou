@@ -42,8 +42,8 @@ class Site extends App_Controller
 		$this->data['content'] = $this->content->get('home');
 		$this->data['confessions'] = $this->confessions->top_confessions(4);
 		config_merge('meta',array(
-			'title' => 'PHP Project Template - Go Nuts!',
-			'description' => 'Holy Cow This is amazing!'
+			'title' => 'God Forgives You',
+			'description' => ''
 		));
 	}
 

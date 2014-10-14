@@ -137,12 +137,25 @@ class App_Controller extends CI_Controller
     
     protected function _load_data()
     {
+        if(!empty($this->less_css))
+        {
+            echo '$this->less_css was not empty.';
+            exit;
+        }
+
+        // $this->data['css'] = $this->css;
+        // $this->data['min_css'] = $this->min_css;
+        // $this->data['less_css'] = $this->less_css;
+        // $this->data['js'] = $this->js;
+        // $this->data['min_js'] = $this->min_js;
+
         // Set the basic data
-        $this->data['css'] = $this->css;
-        $this->data['min_css'] = $this->min_css;
-        $this->data['less_css'] = $this->less_css;
-        $this->data['js'] = $this->js;
-        $this->data['min_js'] = $this->min_js;
+        $this->data['css'] = array_merge($this->css,$this->min_css);
+        $this->data['min_css'] = array();
+        $this->data['less_css'] = array();
+        $this->data['js'] = array_merge($this->js,$this->min_js);
+        $this->data['min_js'] = array();
+
         $this->data['site_name'] = $this->config->item('site_name');
         $this->data['base_url'] = $this->config->item('base_url');
         $this->data['meta'] = $this->config->item('meta');

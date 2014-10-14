@@ -1,13 +1,17 @@
 $(function()
 {
-	/* I really hate bigvideo */
-    var BV = new $.BigVideo();
-    BV.init({useFlashForFirefox:false});
-    //isMobile=true;
-    if (isMobile)
-    	BV.show('/assets/img/cloudsscreen.png');
-	else
-    	BV.show('/assets/video/clouds.mp4', {altSource:'/assets/video/clouds.ogv',ambient:true});
+	if($('#homepage').length)
+	{
+		/* I really hate bigvideo */
+		/* Get over it... your code sucks btw */
+	    var BV = new $.BigVideo();
+	    BV.init({useFlashForFirefox:false});
+	    //isMobile=true;
+	    if (isMobile)
+	    	BV.show('/assets/img/cloudsscreen.png');
+		else
+	    	BV.show('/assets/video/clouds.mp4', {altSource:'/assets/video/clouds.ogv',ambient:true});
+	}
 
 	/* custom select BS */
 	if($.isFunction($.fn.customSelect) && $('select'))

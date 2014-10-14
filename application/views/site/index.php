@@ -1,4 +1,4 @@
-<div class="w800 pull-center align-center">
+<div id="homepage" class="w800 pull-center align-center">
 	<h1 class="c8 robotob">Ask for Forgiveness</h1>
 	<div class="white-opac w800 pad40">
 		<div class="block w180 mar0r pull-left visible">
