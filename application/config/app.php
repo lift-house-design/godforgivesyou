@@ -39,14 +39,6 @@ $config['database'] = array_merge(
 	$config['databases'][$config['environment']]
 );
 
-//////////////////////////////// DATABASE CONNECTION OVERRIDE ////////////////////////////////
-$config['database']=array_merge($config['database'],array(
-	'username'=>'root',
-	'password'=>'',
-	'database'=>'godforgivesyou',
-));
-//////////////////////////////// DATABASE CONNECTION OVERRIDE ////////////////////////////////
-
 /* URL / Path Configuration */
 $config['domain'] = $_SERVER['HTTP_HOST'];
 $config['scheme'] = 'http';
