@@ -103,6 +103,7 @@ function pray(id, type)
 
 function pray_send(id,type)
 {
+	console.log('prayer sent');
 	$.post(
 		'/send_prayer',
 		{id: id, type: type},

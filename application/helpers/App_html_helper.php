@@ -1,12 +1,12 @@
 <?php
 
-function view_confession($confession,$banner=FALSE)
+function view_confession($confession)
 {
 	?>
 		<div class="confession-wrap">
 			<div class="share">
 				<div class="stats">
-					<span><?= $confession['forgives']['forgive'] ?> forgive<?= ($confession['forgives']['forgive'] == 1 ? '' : 's') ?></span>
+					<!--span><?= $confession['forgives']['forgive'] ?> forgive<?= ($confession['forgives']['forgive'] == 1 ? '' : 's') ?></span-->
 					<!--span><?= $confession['forgives']['condemn'] ?> condemnation<?= ($confession['forgives']['condemn'] == 1 ? '' : 's') ?></span-->
 				</div>
 				<div class="social">
@@ -33,18 +33,7 @@ function view_confession($confession,$banner=FALSE)
 					</span>
 				<? } ?>
 			</div-->
-			<div class="pad0t pad10l pad9r pad30b forgive" data-id="<?= $confession['id'] ?>">
-				<? foreach(['forgive'] as $i => $type){ ?>
-					<span class="w25pc block <?= ($i == 3 ? '' : 'pad10r' ) ?>">
-						<a href="javascript:forgive(<?= $confession['id'] ?>,'<?= $type ?>')" class="index-button w100pc block">
-							<?= ucfirst($type) ?>
-						</a>
-					</span>
-				<? } ?>
-			</div>
-			<?php if($banner): ?>
-				<img class="banner" alt="God Always Forgives" title="God Always Forgives" src="<?php echo asset('img/godalwaysforgives-banner.png') ?>" />
-			<?php endif; ?>
+			<img class="banner" alt="God Always Forgives" title="God Always Forgives" src="<?php echo asset('img/godalwaysforgives-banner.png') ?>" />
 		</div>
 	<?
 }
