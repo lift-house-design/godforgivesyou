@@ -63,7 +63,7 @@ class Confessions_model extends App_Model
 	public function count_prayers_for($id)
 	{
 		$id = intval($id);
-		$res = $this->db->query("select count(f.id) as count, f.type from prayers_for f, user u where prayer=$id and f.user=u.id and u.status='confirmed' group by type")->result_array();
+		$res = $this->db->query("select count(f.id) as count, f.type as type from prayers_for f, user u where prayer=$id and f.user=u.id group by f.type")->result_array();
 		$out = [];
 		foreach($res as $row)
 			$out[$row['type']] = $row['count'];

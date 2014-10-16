@@ -44,7 +44,13 @@ function view_prayer($prayer)
 		<div class="prayer-wrap">
 			<div class="share">
 				<div class="stats">
-					<span><?= $prayer['prayers_for']['prayer'] ?> prayer<?= ($prayer['prayers_for']['prayer'] == 1 ? '' : 's') ?></span>
+					<span><?php
+								$row=get_instance()->db->query('select count(*) as count from prayers_for where prayer='.$prayer['id'])->result_array();
+								$count=$row[0]['count'];
+						  ?>
+						<span style="padding: 0;" class="prayer-count"><?php echo $count ?></span>
+						prayer<?php echo $count==1 ? '' : 's' ?>
+					</span>
 				</div>
 				<div class="social">
 					<script type="text/javascript">

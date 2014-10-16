@@ -38,12 +38,12 @@ $(function()
 	
 	$('input,textarea').placeholder();
 
-	$('#signup-join').click(signup);
+	// $('#signup-join').click(signup);
 
-	$('#signup input').keyup(function(e){
-		if(e.keyCode == 13)
-			signup();
-	});
+	// $('#signup input').keyup(function(e){
+	// 	if(e.keyCode == 13)
+	// 		signup();
+	// });
 });
 
 /* good to know */
@@ -62,7 +62,7 @@ function forgive(id, type)
 				$('#signup').hide();
 				forgive_send(id,type);
 			},
-			true
+			false
 		);
 		return;
 	}
@@ -90,10 +90,9 @@ function pray(id, type)
 		signup_form(
 			'Sign up to pray with our community and forgive the sins of others.',
 			function(){
-				$('#signup').hide();
 				pray_send(id,type);
 			},
-			true
+			false
 		);
 		return;
 	}
@@ -103,12 +102,16 @@ function pray(id, type)
 
 function pray_send(id,type)
 {
-	console.log('prayer sent');
 	$.post(
 		'/send_prayer',
 		{id: id, type: type},
 		function(data)
 		{
+			var $prayer=$('.pray[data-id="'+id+'"]').parents('.prayer-wrap');
+			var count=$prayer
+				.find('.prayer-count').html();
+			count=parseInt(count)+1;
+			$prayer.find('.prayer-count').html(count);
 			$('.pray[data-id="'+id+'"]').hide('slow');
 		},
 		'json'
@@ -121,26 +124,34 @@ function hide_signup()
 	$('#signup').hide();
 }
 function signup_form(text, successCallback, skippable)
-{	
+{
+	$('#signup-join').off('click');
 	$('#signup-skip').off('click');
 
 	if(skippable)
 	{
 		$('#signup-skip').show();
 		$('#signup-skip').on('click',function(){
-			console.log(successCallback);
 			successCallback();
 		});
 	}
 	else
 		$('#signup-skip').hide();
+
+	$('#signup-join').on('click',function(){
+		signup(successCallback);
+	});
+
 	$('#signup .text').html(text);
 	$('#signup').show();
 }
 
-function signup_success(){}
+function signup_success(){
+	$('#signup').hide();
+	alert('Thank you for joining!');
+}
 
-function signup()
+function signup(successCallback)
 {
 	var email = $('#signup input[name="email"]').val();
 	var pass = $('#signup input[name="password"]').val();
@@ -155,6 +166,11 @@ function signup()
 			{
 				user = data.user;
 				signup_success();
+
+				if( typeof successCallback==='function')
+				{
+					successCallback();
+				}
 			}
 		},
 		'json'
