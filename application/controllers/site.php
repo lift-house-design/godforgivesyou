@@ -66,12 +66,9 @@ class Site extends App_Controller
 
 	public function send_prayer()
 	{
-		// Not required to send a prayer
-		// if(empty($this->user->data['id']))
-		// 	$this->_json('You aren\'t even logged in, bro.');
-		// $user = $this->user->data['id'];
-
-		$user=empty($this->user->data['id']) ? FALSE : $this->user->data['id']
+		if(empty($this->user->data['id']))
+			$this->_json('You aren\'t even logged in, bro.');
+		$user = $this->user->data['id'];
 
 		$id = $this->input->post('id');
 		$type = $this->input->post('type');
